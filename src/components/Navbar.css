@@ -1,0 +1,26 @@
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+  .navbar-user {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .logo-icon {
+    display: inline-block;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline-block;
+  }
+
+  .search-text {
+    display: none;
+  }
+}
