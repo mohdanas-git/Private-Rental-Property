@@ -1,14 +1,11 @@
 import React from "react";
 import Navbar from "./Navbar";
-
+import Category from "./Category";
 const Home = () => {
   return (
     <div>
       <Navbar />
-      <main style={{ padding: "2rem" }}>
-        <h1>Welcome to My Website</h1>
-        <p>This is your homepage content.</p>
-      </main>
+      <Category/>
     </div>
   );
 };
