@@ -1,6 +1,6 @@
 export default function Footer(){
     return(
-        <div className="flex items-center justify-around bg-neutral-800 w-full text-white text-md gap-5 flex-wrap mt-5">
+        <div className="flex items-center justify-around bg-neutral-800 w-full text-white text-sm gap-5 flex-wrap mt-5">
             <div className="flex flex-col items-center justify-center gap-3 min-w-fit p-6">
                 <h1 className="font-bold">Contact Us</h1>
                 <a href="tel:+91000000000" className="hover:text-red-600 transition-all duration-100 ease-in-out">Call Us</a>
