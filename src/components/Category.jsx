@@ -46,7 +46,7 @@ const Category = () => {
         <p className="text-xs font-medium">Room</p>
       </Link>
 
-      <Link to="FarmHouse"
+      <Link to="/Farm-House"
         onClick={() => handler(4)}
         className={`transition-transform duration-200 pb-1 ${
           cur === 4 ? "scale-110 border-b-2 border-neutral-800" : "scale-100"

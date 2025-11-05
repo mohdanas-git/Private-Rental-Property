@@ -4,10 +4,12 @@ import Category from "./Category";
 import Footer from "./Footer";
 const Home = () => {
   return (
-    <div>
+<div className="flex flex-col min-h-screen">
       <Navbar />
-      <Category/>
-      <Footer></Footer>
+  <main className="grow">
+        <Category/>
+      </main>
+      <Footer/>
     </div>
   );
 };
