@@ -36,7 +36,7 @@ const Category = () => {
         <p className="text-xs font-medium">Home</p>
       </Link>
 
-      <Link to="/Room"
+      <Link to="/room"
         onClick={() => handler(3)}
         className={`transition-transform duration-200 pb-1 ${
           cur === 3 ? "scale-110 border-b-2 border-neutral-800" : "scale-100"
@@ -46,7 +46,7 @@ const Category = () => {
         <p className="text-xs font-medium">Room</p>
       </Link>
 
-      <Link to="/Farm-House"
+      <Link to="/farm-house"
         onClick={() => handler(4)}
         className={`transition-transform duration-200 pb-1 ${
           cur === 4 ? "scale-110 border-b-2 border-neutral-800" : "scale-100"
@@ -56,7 +56,7 @@ const Category = () => {
         <p className="text-xs font-medium">Farm House</p>
       </Link>
 
-      <Link to="/Pool"
+      <Link to="/pool"
         onClick={() => handler(5)}
         className={`transition-transform duration-200 pb-1 ${
           cur === 5 ? "scale-110 border-b-2 border-neutral-800" : "scale-100"
@@ -66,7 +66,7 @@ const Category = () => {
         <p className="text-xs font-medium">Pool</p>
       </Link>
 
-      <Link to="/Tent"
+      <Link to="/tent"
         onClick={() => handler(6)}
         className={`transition-transform duration-200 pb-1 ${
           cur === 6 ? "scale-110 border-b-2 border-neutral-800" : "scale-100"

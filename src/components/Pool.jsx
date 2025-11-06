@@ -1,5 +1,8 @@
+import CardContainer from "./CardContainer"
 export default function Pool(){
     return (
-        <h1>Pool</h1>
+        <div>
+      <CardContainer category="pool" />
+    </div>
     )
 }

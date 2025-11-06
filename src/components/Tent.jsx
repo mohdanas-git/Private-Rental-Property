@@ -1,5 +1,8 @@
+import CardContainer from "./CardContainer"
 export default function Tent(){
     return (
-        <h1>Tent</h1>
+        <div>
+      <CardContainer category="tent" />
+    </div>
     )
 }

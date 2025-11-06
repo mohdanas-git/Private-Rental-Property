@@ -1,5 +1,8 @@
+import CardContainer from "./CardContainer"
 export default function House(){
     return(
-        <h1>House</h1>
+        <div>
+            <CardContainer category="home"/>
+        </div>
     )
 }

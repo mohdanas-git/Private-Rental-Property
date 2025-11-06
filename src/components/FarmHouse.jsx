@@ -1,5 +1,8 @@
+import CardContainer from "./CardContainer"
 export default function FarmHouse(){
     return(
-        <h1>FarmHouse</h1>
+        <div>
+      <CardContainer category="farmhouse" />
+    </div>
     );
 }

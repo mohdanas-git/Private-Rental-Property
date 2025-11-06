@@ -1,0 +1,112 @@
+export const PropertyData = [
+  {
+    "title": "Modern 3BHK Family Home",
+    "description": "Beautifully designed modern family home with spacious interiors, modular kitchen, and a small backyard.",
+    "category": "home",
+    "img1_url": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg",
+    "img2_url": "https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg",
+    "img3_url": "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg",
+    "rent": 35000,
+    "location": "Noida, Uttar Pradesh, India",
+    "trending": true
+  },
+  {
+    "title": "Luxury Pool Villa",
+    "description": "Experience ultimate relaxation in this luxury villa with a private pool, sun deck, and tropical garden view.",
+    "category": "pool",
+    "img1_url": "https://images.pexels.com/photos/261101/pexels-photo-261101.jpeg",
+    "img2_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg",
+    "img3_url": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg",
+    "rent": 90000,
+    "location": "Candolim, Goa, India",
+    "trending": true
+  },
+  {
+    "title": "Cozy Tent Stay in the Hills",
+    "description": "Enjoy camping in style with this cozy tent stay surrounded by lush greenery and mountain views.",
+    "category": "tent",
+    "img1_url": "https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg",
+    "img2_url": "https://images.pexels.com/photos/618848/pexels-photo-618848.jpeg",
+    "img3_url": "https://images.pexels.com/photos/21014/pexels-photo.jpg",
+    "rent": 2500,
+    "location": "Manali, Himachal Pradesh, India",
+    "trending": false
+  },
+  {
+    "title": "Rustic Farmhouse Getaway",
+    "description": "A charming countryside farmhouse perfect for weekend getaways, featuring open fields and a cozy patio.",
+    "category": "farmhouse",
+    "img1_url": "https://images.pexels.com/photos/259580/pexels-photo-259580.jpeg",
+    "img2_url": "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg",
+    "img3_url": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+    "rent": 15000,
+    "location": "Alibaug, Maharashtra, India",
+    "trending": false
+  },
+  {
+    "title": "Minimalist Studio Room",
+    "description": "Compact studio room for singles or working professionals. Fully furnished with air conditioning and balcony view.",
+    "category": "room",
+    "img1_url": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg",
+    "img2_url": "https://images.pexels.com/photos/1457843/pexels-photo-1457843.jpeg",
+    "img3_url": "https://images.pexels.com/photos/271628/pexels-photo-271628.jpeg",
+    "rent": 12000,
+    "location": "Koregaon Park, Pune, India",
+    "trending": true
+  },
+  {
+    "title": "Elegant 2BHK Home with Balcony",
+    "description": "A well-ventilated modern 2BHK apartment with a spacious balcony and ample sunlight throughout the day.",
+    "category": "home",
+    "img1_url": "https://images.pexels.com/photos/276727/pexels-photo-276727.jpeg",
+    "img2_url": "https://images.pexels.com/photos/276733/pexels-photo-276733.jpeg",
+    "img3_url": "https://images.pexels.com/photos/276726/pexels-photo-276726.jpeg",
+    "rent": 28000,
+    "location": "Indiranagar, Bangalore, India",
+    "trending": false
+  },
+  {
+    "title": "Mountain View Tent Stay",
+    "description": "Stay close to nature with this scenic tent setup offering beautiful mountain views and cozy interiors.",
+    "category": "tent",
+    "img1_url": "https://images.pexels.com/photos/618845/pexels-photo-618845.jpeg",
+    "img2_url": "https://images.pexels.com/photos/618849/pexels-photo-618849.jpeg",
+    "img3_url": "https://images.pexels.com/photos/618850/pexels-photo-618850.jpeg",
+    "rent": 2200,
+    "location": "Kasol, Himachal Pradesh, India",
+    "trending": true
+  },
+  {
+    "title": "Private Pool Cottage",
+    "description": "A charming cottage with a private pool, lush garden, and modern living area for a relaxing vacation.",
+    "category": "pool",
+    "img1_url": "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg",
+    "img2_url": "https://images.pexels.com/photos/210602/pexels-photo-210602.jpeg",
+    "img3_url": "https://images.pexels.com/photos/210605/pexels-photo-210605.jpeg",
+    "rent": 75000,
+    "location": "Lonavala, Maharashtra, India",
+    "trending": false
+  },
+  {
+    "title": "Green Valley Farmhouse",
+    "description": "Spacious farmhouse surrounded by greenery, perfect for family gatherings and weekend retreats.",
+    "category": "farmhouse",
+    "img1_url": "https://images.pexels.com/photos/276732/pexels-photo-276732.jpeg",
+    "img2_url": "https://images.pexels.com/photos/276734/pexels-photo-276734.jpeg",
+    "img3_url": "https://images.pexels.com/photos/276735/pexels-photo-276735.jpeg",
+    "rent": 18000,
+    "location": "Nashik, Maharashtra, India",
+    "trending": true
+  },
+  {
+    "title": "Compact Room for Rent",
+    "description": "Affordable room for rent, ideal for working professionals, with Wi-Fi, AC, and easy access to public transport.",
+    "category": "room",
+    "img1_url": "https://images.pexels.com/photos/1457844/pexels-photo-1457844.jpeg",
+    "img2_url": "https://images.pexels.com/photos/1457845/pexels-photo-1457845.jpeg",
+    "img3_url": "https://images.pexels.com/photos/1457846/pexels-photo-1457846.jpeg",
+    "rent": 9500,
+    "location": "Andheri East, Mumbai, India",
+    "trending": false
+  }
+];

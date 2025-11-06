@@ -1,5 +1,9 @@
-export default function Room(){
-    return(
-        <h1>Room</h1>
-    )
+import CardContainer from "./CardContainer"
+
+export default function Room() {
+  return (
+    <div>
+      <CardContainer category="room" />
+    </div>
+  );
 }
