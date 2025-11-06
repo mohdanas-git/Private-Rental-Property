@@ -61,7 +61,7 @@ const Navbar = () => {
               SignUp
             </Link>
              <Link
-              to="/listyourhome"
+              to="/list-your-home"
               className="hover:bg-neutral-200 w-fit px-3 py-2 hover:rounded-2xl"
               onClick={() => setMenu({ ...menu, mobile: false })}
             >

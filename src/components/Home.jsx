@@ -10,11 +10,11 @@ import Footer from "./Footer";
 const Home = () => {
   return (
     <Router>
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen 2xl:max-w-500 mx-auto">
       <Navbar />
     <main className="grow">
         <Routes>
-        <Route path="/" element={<Category/>}></Route>
+      <Route path="/" element={<Category/>}></Route>
       <Route path="/list-your-home" element={<ListYourHome/>}></Route>
       <Route path="/login" element={<Login/>}></Route>
       <Route path="/help" element={<Help/>}></Route>
