@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 export default function Footer(){
     return(
         <div className="flex items-center justify-around bg-neutral-800 w-full text-white text-sm flex-wrap mt-5 pt-6">
@@ -9,15 +10,15 @@ export default function Footer(){
             </div>
             <div className="flex flex-col items-center justify-center gap-3 min-w-fit">
                 <h1 className="font-bold">Our Services</h1>
-                <a href="#" className="hover:text-red-600 transition-all duration-100 ease-in-out">Home</a>
-                <a href="#" className="hover:text-red-600 transition-all duration-100 ease-in-out">Add Listing</a>
+                <Link to="/" className="hover:text-red-600 transition-all duration-100 ease-in-out">Home</Link>
+                <Link to="/list-your-home" className="hover:text-red-600 transition-all duration-100 ease-in-out">Add Listing</Link>
                 <a href="#" className="hover:text-red-600 transition-all duration-100 ease-in-out">Rent</a>
             </div>
             <div className="flex flex-col items-center justify-center gap-3 min-w-fit">
                 <h1 className="font-bold">Quick Link</h1>
                 <a href="#" className="hover:text-red-600 transition-all duration-100 ease-in-out">Knowledge Base</a>
                 <a href="#" className="hover:text-red-600 transition-all duration-100 ease-in-out">FAQ</a>
-                <a href="#" className="hover:text-red-600 transition-all duration-100 ease-in-out">Contact</a>
+                <Link to="/help" className="hover:text-red-600 transition-all duration-100 ease-in-out">Contact</Link>
             </div>
             <div className="flex flex-col items-center justify-center gap-3 min-w-fit text-md">
                 <h1 className="font-bold">Private Property Rental</h1>
