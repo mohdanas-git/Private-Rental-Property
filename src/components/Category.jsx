@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import House from "./House";
 import Trending from "./Trending";
 import Room from "./Room";
@@ -14,7 +14,7 @@ const Category = () => {
     setCurr(id);
   };
   return (
-    <Router>
+    <>
     <div className="flex items-center justify-around text-md my-3 text-center">
       <Link to="/"
         onClick={() => handler(1)}
@@ -84,7 +84,7 @@ const Category = () => {
         <Route path="/pool" element={<Pool/>}></Route>
         <Route path="/tent" element={<Tent/>}></Route>
     </Routes>
-    </Router>
+    </>
   );
 };
 

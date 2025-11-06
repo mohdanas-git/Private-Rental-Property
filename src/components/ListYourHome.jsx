@@ -1,5 +1,5 @@
 export default function ListYourHome(){
     return(
-        <h1>under development</h1>
+        <h1>ListYourHome</h1>
     );
 }

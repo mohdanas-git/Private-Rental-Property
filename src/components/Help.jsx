@@ -1,5 +1,5 @@
 export default function Help(){
     return(
-        <h1>under development</h1>
+        <h1>help</h1>
     );
 }

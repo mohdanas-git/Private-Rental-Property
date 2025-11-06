@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import logo from "../assets/p.jpg";
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
   const [menu, setMenu] = useState({
@@ -9,23 +9,22 @@ const Navbar = () => {
   });
 
   return (
-    <nav className="flex items-center justify-between border-b sm:px-4 sm:py-4 border-b-neutral-400">
-      {/* Left side: logo */}
+      <nav className="flex items-center justify-between border-b sm:px-2 sm:py-4 border-b-neutral-400">
       <div className="flex items-center justify-between gap-2">
-        <a href="/">
+        <Link to="/">
           <img src={logo} alt="Logo" className="w-20 sm:hidden" />
-        </a>
-        <a
-          href="/"
+        </Link>
+        <Link
+          to="/"
           className="hidden text-xl italic font-semibold no-underline text-black sm:inline-block"
         >
           <span className="text-2xl text-red-700">P</span>rivate{" "}
           <span className="text-2xl text-red-700">R</span>ental{" "}
           <span className="text-2xl text-red-700">P</span>roperty
-        </a>
+        </Link>
       </div>
 
-      {/* Search bar */}
+      
       <div className="flex align-center gap-2">
         <input
           type="text"
@@ -40,7 +39,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
       <div className="relative md:hidden">
         <button onClick={() => setMenu({ ...menu, mobile: !menu.mobile })}>
           <i className="fa-solid fa-bars text-2xl cursor-pointer p-3 rounded-full hover:bg-neutral-200 transition"></i>
@@ -48,46 +46,45 @@ const Navbar = () => {
 
         {menu.mobile && (
           <div className="absolute right-2 bg-white flex flex-col justify-around p-6 shadow-md shadow-neutral-800 rounded-2xl gap-2 m-w-12 z-10 text-md w-48">
-            <a
-              href="/login"
+            <Link
+              to="/login"
               className="hover:bg-neutral-200 w-fit px-3 py-2 hover:rounded-2xl"
               onClick={() => setMenu({ ...menu, mobile: false })}
             >
               Login
-            </a>
-            <a
-              href="/signup"
+            </Link>
+            <Link
+              to="/signup"
               className="hover:bg-neutral-200 w-fit px-3 py-2 hover:rounded-2xl"
               onClick={() => setMenu({ ...menu, mobile: false })}
             >
               SignUp
-            </a>
-             <a
-              href="/listyourhome"
+            </Link>
+             <Link
+              to="/listyourhome"
               className="hover:bg-neutral-200 w-fit px-3 py-2 hover:rounded-2xl"
               onClick={() => setMenu({ ...menu, mobile: false })}
             >
               List Your Home
-            </a>
-            <a
-              href="/help"
+            </Link>
+            <Link
+              to="/help"
               className="hover:bg-neutral-200 w-fit px-3 py-2 hover:rounded-2xl"
               onClick={() => setMenu({ ...menu, mobile: false })}
             >
               Help
-            </a>
+            </Link>
           </div>
         )}
       </div>
 
-      {/* Desktop (tab) menu */}
       <div className="flex items-center justify-between gap-[2vw] max-md:hidden">
-        <a
-          href="/listyourhome"
+        <Link
+          to="/list-your-home"
           className="flex items-center py-3 px-5 rounded-3xl text-md transition-all duration-300 ease-in-out hover:bg-[#d2d2d2dd] text-neutral-700"
         >
           List your home
-        </a>
+        </Link>
 
         <div className="relative">
           <button
@@ -100,28 +97,28 @@ const Navbar = () => {
 
           {menu.tab && (
             <div className="absolute right-2 bg-white flex flex-col justify-around py-3 px-2 shadow-md shadow-neutral-800 rounded-2xl gap-2 m-w-12 z-10 text-md w-48">
-              <a
-                href="/login"
+              <Link
+                to="/login"
                 className="hover:bg-neutral-200 w-fit px-3 py-2 hover:rounded-2xl"
                 onClick={() => setMenu({ ...menu, tab: false })}
               >
                 Login
-              </a>
-              <a
-                href="/signup"
+              </Link>
+              <Link
+                to="/signup"
                 className="hover:bg-neutral-200 w-fit px-3 py-2 hover:rounded-2xl"
                 onClick={() => setMenu({ ...menu, tab: false })}
               >
                 SignUp
-              </a>
+              </Link>
              
-              <a
-                href="/help"
+              <Link
+                to="/help"
                 className="hover:bg-neutral-200 w-fit px-3 py-2 hover:rounded-2xl"
                 onClick={() => setMenu({ ...menu, tab: false })}
               >
                 Help
-              </a>
+              </Link>
             </div>
           )}
         </div>
