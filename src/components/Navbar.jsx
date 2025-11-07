@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/p.jpg";
 import {Link} from "react-router-dom";
-
+import { PropertyData as data } from "./data";
 const Navbar = () => {
   const [menu, setMenu] = useState({
     mobile: false,
@@ -16,8 +16,7 @@ const Navbar = () => {
         </Link>
         <Link
           to="/"
-          className="hidden text-xl italic font-semibold no-underline text-black sm:inline-block"
-        >
+          className="hidden text-xl italic font-semibold no-underline text-black sm:inline-block">
           <span className="text-2xl text-red-700">P</span>rivate{" "}
           <span className="text-2xl text-red-700">R</span>ental{" "}
           <span className="text-2xl text-red-700">P</span>roperty
@@ -29,9 +28,14 @@ const Navbar = () => {
         <input
           type="text"
           placeholder="Search..."
-          className="w-[22vw] border border-neutral-400 py-2 px-5 rounded-[30px] text-md sm:text-md outline-none max-md:w-full"
+          className="w-[22vw] border border-neutral-400 py-2 px-5 rounded-[30px] text-md sm:text-md outline-none max-md:w-full appearance-none" list="destination"
         />
-        <button className="flex items-center justify-between bg-red-700 text-white font-bold border-2 border-transparent rounded-3xl py-1 px-3 cursor-pointer transition-all duration-300 ease-in-out hover:bg-white hover:text-red-700 hover:border-red-700 gap-2">
+        <datalist id="destination" >
+          {data.map((item) => (
+            <option value={`${item.city}`} >{item.title}</option>
+          ))}
+        </datalist>
+        <button type="submit" className="flex items-center justify-between bg-red-700 text-white font-bold border-2 border-transparent rounded-3xl py-1 px-3 cursor-pointer transition-all duration-300 ease-in-out hover:bg-white hover:text-red-700 hover:border-red-700 gap-2">
           <i className="fa-solid fa-magnifying-glass text-[1rem] font-normal"></i>
           <span className="text-1 font-normal hidden sm:inline-block">
             Search
@@ -61,7 +65,7 @@ const Navbar = () => {
               SignUp
             </Link>
              <Link
-              to="/list-your-home"
+              to="/listyourhome"
               className="hover:bg-neutral-200 w-fit px-3 py-2 hover:rounded-2xl"
               onClick={() => setMenu({ ...menu, mobile: false })}
             >

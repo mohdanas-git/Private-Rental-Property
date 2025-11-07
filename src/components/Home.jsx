@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import ListYourHome from "./ListYourHome";
 import Login from "./Login";
@@ -11,13 +11,13 @@ import Footer from "./Footer";
 
 function Layout() {
   const location = useLocation();
-  const categoryPaths = ["/", "/house", "/room", "/farm-house", "/pool", "/tent"];
+  const categoryPaths = ["/","/trending", "/house", "/room", "/farm-house", "/pool", "/tent"];
   const showCategory = categoryPaths.includes(location.pathname);
 
   return (
-    <div className="flex flex-col min-h-screen 2xl:max-w-fit mx-auto border">
-      <Navbar />
-      {showCategory && <Category />}
+    <div className="flex flex-col min-h-screen 2xl:max-w-fit mx-auto">
+      <Navbar/>
+      {showCategory && <Category/>}
       <main className="grow">
         <Routes>
           <Route path="/list-your-home" element={<ListYourHome />} />

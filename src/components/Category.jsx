@@ -6,9 +6,10 @@ import Room from "./Room";
 import Pool from "./Pool";
 import Tent from "./Tent";
 import FarmHouse from "./FarmHouse";
+import AllProperty from "./AllProperty";
 
 const Category = () => {
-  const [cur, setCurr] = useState(1);
+  const [cur, setCurr] = useState(0);
 
   const handler = (id) => {
     setCurr(id);
@@ -16,7 +17,7 @@ const Category = () => {
   return (
     <>
     <div className="flex items-center justify-around text-md my-3 text-center">
-      <Link to="/"
+      <Link to="/trending"
         onClick={() => handler(1)}
         className={`transition-transform duration-200 pb-1 ${
           cur === 1 ? "scale-110 border-b-2 border-neutral-800" : "scale-100"
@@ -77,12 +78,13 @@ const Category = () => {
       </Link>
     </div>
     <Routes>
-        <Route path="/" element={<Trending/>}></Route>
-        <Route path="/house" element={<House/>}></Route>
-        <Route path="/room" element={<Room/>}></Route>
-        <Route path="/farm-house" element={<FarmHouse/>}></Route>
-        <Route path="/pool" element={<Pool/>}></Route>
-        <Route path="/tent" element={<Tent/>}></Route>
+        <Route path="/" element={<AllProperty/>} />
+        <Route path="/trending" element={<Trending/>} />
+        <Route path="/house" element={<House/>} />
+        <Route path="/room" element={<Room/>} />
+        <Route path="/farm-house" element={<FarmHouse/>} />
+        <Route path="/pool" element={<Pool/>} />
+        <Route path="/tent" element={<Tent/>} />
     </Routes>
     </>
   );

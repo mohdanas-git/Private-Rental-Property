@@ -8,6 +8,8 @@ export const PropertyData = [
     "img3_url": "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg",
     "rent": 35000,
     "location": "Noida, Uttar Pradesh, India",
+    "city": "Noida",
+    "tagline": "Smart living near Delhi",
     "trending": true
   },
   {
@@ -19,6 +21,8 @@ export const PropertyData = [
     "img3_url": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg",
     "rent": 90000,
     "location": "Candolim, Goa, India",
+    "city": "Goa",
+    "tagline": "Beach vibes only",
     "trending": true
   },
   {
@@ -30,6 +34,8 @@ export const PropertyData = [
     "img3_url": "https://images.pexels.com/photos/21014/pexels-photo.jpg",
     "rent": 2500,
     "location": "Manali, Himachal Pradesh, India",
+    "city": "Manali",
+    "tagline": "Peace in the hills",
     "trending": false
   },
   {
@@ -41,6 +47,8 @@ export const PropertyData = [
     "img3_url": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
     "rent": 15000,
     "location": "Alibaug, Maharashtra, India",
+    "city": "Alibaug",
+    "tagline": "Coastal calm escape",
     "trending": false
   },
   {
@@ -52,6 +60,8 @@ export const PropertyData = [
     "img3_url": "https://images.pexels.com/photos/271628/pexels-photo-271628.jpeg",
     "rent": 12000,
     "location": "Koregaon Park, Pune, India",
+    "city": "Pune",
+    "tagline": "Young and vibrant",
     "trending": true
   },
   {
@@ -63,7 +73,9 @@ export const PropertyData = [
     "img3_url": "https://images.pexels.com/photos/276726/pexels-photo-276726.jpeg",
     "rent": 28000,
     "location": "Indiranagar, Bangalore, India",
-    "trending": false
+    "city": "Bangalore",
+    "tagline": "Tech city comfort",
+    "trending": true
   },
   {
     "title": "Mountain View Tent Stay",
@@ -74,6 +86,8 @@ export const PropertyData = [
     "img3_url": "https://images.pexels.com/photos/618850/pexels-photo-618850.jpeg",
     "rent": 2200,
     "location": "Kasol, Himachal Pradesh, India",
+    "city": "Kasol",
+    "tagline": "Nature’s chill spot",
     "trending": true
   },
   {
@@ -85,6 +99,8 @@ export const PropertyData = [
     "img3_url": "https://images.pexels.com/photos/210605/pexels-photo-210605.jpeg",
     "rent": 75000,
     "location": "Lonavala, Maharashtra, India",
+    "city": "Lonavala",
+    "tagline": "Cool hill retreat",
     "trending": false
   },
   {
@@ -96,7 +112,9 @@ export const PropertyData = [
     "img3_url": "https://images.pexels.com/photos/276735/pexels-photo-276735.jpeg",
     "rent": 18000,
     "location": "Nashik, Maharashtra, India",
-    "trending": true
+    "city": "Nashik",
+    "tagline": "Wine and relax",
+    "trending": false
   },
   {
     "title": "Compact Room for Rent",
@@ -107,6 +125,8 @@ export const PropertyData = [
     "img3_url": "https://images.pexels.com/photos/1457846/pexels-photo-1457846.jpeg",
     "rent": 9500,
     "location": "Andheri East, Mumbai, India",
-    "trending": false
+    "city": "Mumbai",
+    "tagline": "City that never sleeps",
+    "trending": true
   }
 ];

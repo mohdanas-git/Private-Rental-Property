@@ -1,8 +1,8 @@
 import CardContainer from "./CardContainer";
-export default function Trending(){
+export default function AllProperty(){
     return(
        <div className="text-black">
-            <CardContainer trending={true}/>
+            <CardContainer/>
        </div>
     )
 }
